@@ -1,0 +1,19 @@
+name: "Joe's Menu"
+description: "Joe's Cookbook and Collection of Recipes"
+exclude: [README.md]
+baseurl: "/Zeus-Menu"
+collections:
+  recipes:
+    output: true
+defaults:
+  -
+    scope:
+      path: ""
+    values:
+      layout: "default"
+  -
+    scope:
+      path: ""
+      type: "recipes"
+    values:
+      layout: "recipe"

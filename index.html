@@ -1,0 +1,12 @@
+---
+title: "Joe Menu"
+---
+<div class="row">
+  {% for recipe in site.recipes %}
+    <div class="col-xl-2 col-lg-3 col-md-3 col-sm-4">
+      <div class="recipe-container-menu text-center">
+        <h3 class="recipe-title"><a href="{{ site.baseurl }}{{ recipe.url }}">{{ recipe.title }}</a></h3>
+      </div>
+    </div>
+  {% endfor %}
+</div>

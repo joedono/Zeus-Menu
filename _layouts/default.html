@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html>
+<head>
+{% include head.html %}
+</head>
+<body>
+  <div class="container">
+    <header class="row">
+      <div class="col">
+        <h1 class="site-title">
+          <a href="/">{{ site.name }}</a>
+        </h1>
+      </div>
+    </header>
+    <div class="row">
+      <main class="col">
+        {{ content }}
+      </main>
+    </div>
+  </div>
+  <footer class="container-fluid">
+    <a href="#">Back to top</a>
+  </footer>
+  {% include scripts.html %}
+</body>
+</html>
